@@ -5,7 +5,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Map v8",
+                        "description": "Karabiner-Elements configuration for using Caps Lock as a modifier key to control mouse and arrow keys v0.9",
                         "manipulators": [
                             {
                                 "from": {
