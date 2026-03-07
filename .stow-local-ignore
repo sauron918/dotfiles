@@ -4,8 +4,6 @@
 
 .idea
 
-scripts
-
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
