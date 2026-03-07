@@ -55,10 +55,15 @@ auto-update-channel = tip
 
 ### Apperance
 theme = Tomorrow
+
 cursor-style = block
 cursor-style-blink = false
 # automatically set the cursor to a bar at a prompt otherwise:
 shell-integration-features = no-cursor
+
+# full-screen window on start up
+window-width = 99999
+window-height = 99999
 
 
 ### Typography
