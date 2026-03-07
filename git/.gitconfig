@@ -1,6 +1,9 @@
-[user]
-	name = Serhii Nahorets
-	email = serhii.nahorets@namecheap.com
+[includeIf "gitdir:~/nc/"]
+    path = ~/.config/git/.gitconfig.work
+[includeIf "gitdir:~/sp/"]
+    path = ~/.config/git/.gitconfig.work
+[includeIf "gitdir:~/dev/"]
+    path = ~/.config/git/.gitconfig.personal
 [commit]
 	gpgSign = false
 [gui]
