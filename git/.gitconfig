@@ -4,19 +4,9 @@
     path = ~/.config/git/.gitconfig.work
 [includeIf "gitdir:~/dev/"]
     path = ~/.config/git/.gitconfig.personal
-[commit]
-	gpgSign = false
-[gui]
-	pruneduringfetch = true
-[smartgit "submodule"]
-	fetchalways = false
-	update = true
-	initializenew = true
-[push]
-	recurseSubmodules = check
-[gc]
-	autoDetach = false
 [pull]
 	rebase = false
+[push]
+	recurseSubmodules = check
 [credential]
 	helper = osxkeychain
