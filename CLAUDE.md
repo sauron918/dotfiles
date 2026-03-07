@@ -17,6 +17,9 @@ This is a **dotfiles repository** managed with [GNU Stow](https://www.gnu.org/so
 # Symlink a package (e.g., git configs) into $HOME
 stow git
 
+# Symlink all packages at once
+stow */
+
 # Remove symlinks for a package
 stow -D git
 
@@ -32,7 +35,7 @@ Each package directory mirrors the home directory layout:
 - **`zsh/`** — `.zshrc` (oh-my-zsh with agnoster theme)
 - **`ghostty/`** — `.config/ghostty/config` (Ghostty terminal config)
 - **`karabiner/`** — `.config/karabiner/karabiner.json` (keyboard remapping, caps lock as modifier key)
-- **`scripts/`** — Utility scripts (not stowed, excluded via `.stow-local-ignore`)
+- **`scripts/`** — Utility scripts (not stowed; has its own `.stow-local-ignore` that ignores all files, plus excluded at repo level). Contains `bootstrap` for new machine setup.
 
 ## Conventions
 
