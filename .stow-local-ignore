@@ -1,3 +1,11 @@
-.git
+\.git
+\.gitignore
+\.gitmodules
+
 .idea
+
 scripts
+
+^/README.*
+^/LICENSE.*
+^/COPYING
