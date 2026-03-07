@@ -102,18 +102,23 @@ source $ZSH/oh-my-zsh.sh
 
 function docker-exec-alias() { docker exec -it $1 ${2:-bash} }
 
+### Custom Aliases
 alias l='ls -lahG'
+alias e=subl
+alias kc=kubectl
+alias con=bin/console
+
+# Git Aliases
 alias gs='git status'
 alias gl='git log --graph --decorate --oneline --abbrev-commit --all'
 alias gp='git pull'
 alias gc='git checkout'
-alias cons='bin/console'
 alias de=docker-exec-alias
+
+# Docker Aliases
 alias start='docker compose -f docker-compose.yml -f docker-compose.deps.yaml -f docker-compose.deps.local.yaml up'
 alias stop='docker compose -f docker-compose.yml -f docker-compose.deps.yaml -f docker-compose.deps.local.yaml down'
-alias kc=kubectl
-alias con=bin/console
-alias e=subl
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
