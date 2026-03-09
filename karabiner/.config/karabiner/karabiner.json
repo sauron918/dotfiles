@@ -4,9 +4,10 @@
         {
             "name": "Default profile",
             "complex_modifications": {
+                "description": "Karabiner-Elements config v0.9.7 (Caps Lock as a modifier key and control mouse)",
                 "rules": [
                     {
-                        "description": "Karabiner-Elements config v0.9.5 (Caps Lock as a modifier key and control mouse)",
+                        "description": "State variables",
                         "manipulators": [
                             {
                                 "description": "Variable to track when Caps Lock is held as modifier",
@@ -24,9 +25,13 @@
                                 "to_after_key_up": { "set_variable": { "name": "capslock_and_x_held", "value": 0 }},
                                 "to_if_alone": { "key_code": "x" },
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock + X: Mouse control",
+                        "manipulators": [
                             {
-                                "description": "Mouse buttons and movement when Caps Lock and X are held",
                                 "conditions": [{ "name": "capslock_and_x_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "semicolon", "modifiers": { "optional": ["any"] }},
                                 "to": [{ "pointing_button": "button1" }],
@@ -91,7 +96,12 @@
                                 "from": { "key_code": "p", "modifiers": { "optional": ["any"] }},
                                 "to": [{ "mouse_key": { "horizontal_wheel": -64 } }],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock: Navigation (arrow keys, page up/down, home/end)",
+                        "manipulators": [
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "j", "modifiers": { "optional": ["any"] }},
@@ -139,7 +149,12 @@
                                 "from": { "key_code": "period", "modifiers": { "optional": ["any"] }},
                                 "to": [{ "key_code": "end" }],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock: Editing (escape, enter, delete etc)",
+                        "manipulators": [
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "a", "modifiers": { "optional": ["any"] }},
@@ -184,10 +199,21 @@
                             },
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
+                                "from": { "key_code": "y", "modifiers": { "optional": ["any"] }},
+                                "to": { "key_code": "delete_or_backspace", "modifiers": ["command"] },
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "quote", "modifiers": { "optional": ["any"] }},
                                 "to": [{ "key_code": "insert" }],
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock: App and window navigation (tab switching, back/forward etc)",
+                        "manipulators": [
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "q", "modifiers": { "optional": ["any"] }},
@@ -226,16 +252,15 @@
                             },
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
-                                "from": { "key_code": "y", "modifiers": { "optional": ["any"] }},
-                                "to": { "key_code": "delete_or_backspace", "modifiers": ["command"] },
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "comma", "modifiers": { "optional": ["any"] }},
                                 "to": { "key_code": "period", "modifiers": ["command"]},
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock: Function keys (F1-F12)",
+                        "manipulators": [
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "1", "modifiers": { "optional": ["any"] }},
@@ -307,7 +332,12 @@
                                 "from": { "key_code": "equal_sign", "modifiers": { "optional": ["any"] }},
                                 "to": { "key_code": "f12" },
                                 "type": "basic"
-                            },
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Option layer: Symbols and brackets (Opt + symbol mappings)",
+                        "manipulators": [
                             {
                                 "from": { "key_code": "y", "modifiers": { "mandatory": ["option"] }},
                                 "to": { "key_code": "7", "modifiers": ["shift"] },
