@@ -336,6 +336,23 @@
                         ]
                     },
                     {
+                        "description": "Misc (brightness etc)",
+                        "manipulators": [
+                            {
+                                "description": "RCmd + -/– to decrease brightness",
+                                "from": { "key_code": "hyphen", "modifiers": { "mandatory": ["right_command"] }},
+                                "to": { "consumer_key_code": "display_brightness_decrement" },
+                                "type": "basic"
+                            },
+                            {
+                                "description": "RCmd + +/= to decrease brightness",
+                                "from": { "key_code": "equal_sign", "modifiers": { "mandatory": ["right_command"] }},
+                                "to": { "consumer_key_code": "display_brightness_increment" },
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Option layer: Symbols and brackets (Opt + symbol mappings)",
                         "manipulators": [
                             {
