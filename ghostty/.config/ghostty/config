@@ -74,3 +74,8 @@ font-thicken = true
 # font-thicken-strength = 100
 # line-height
 adjust-cell-height = 25%
+
+
+### Key bindings
+keybind = cmd+alt+left=previous_tab
+keybind = cmd+alt+right=next_tab
