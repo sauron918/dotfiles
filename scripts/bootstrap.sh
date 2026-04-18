@@ -18,6 +18,8 @@ brew install \
   espanso
 
 # stop – for configs sync
-# espanso – for text replacements
+# espanso – for text replacements, it needs to be run before stow usage to avoid stow errors 'unable to load config: unable to load config'
+
+echo "2. Configuring..."
 
 echo "Done!"
