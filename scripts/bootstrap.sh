@@ -14,7 +14,10 @@ fi
 echo "1. Installing packages..."
 
 brew install \
-  stow \ # for configs sync
-  espanso # for text replacements
+  stow \
+  espanso
+
+# stop – for configs sync
+# espanso – for text replacements
 
 echo "Done!"
