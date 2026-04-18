@@ -15,11 +15,10 @@ defaults write -g InitialKeyRepeat -int 13
 
 # by default, macOS intentionally adds a small delay (~150–300 ms) when pressing Caps Lock to prevent accidental activation
 # with 0 → Caps Lock toggles instantly on tap
-# /usr/bin/hidutil property --set '{"CapsLockDelayOverride":0}'
+/usr/bin/hidutil property --set '{"CapsLockDelayOverride":0}'
 
-# add user-scoped LaunchAgent (not a system daemon)
+# ^ settings don't persist across reboots, so the agent just re-applies the tweak at every login
 # the plist runs hidutil property --set '{"CapsLockDelayOverride":0}' at every login
-# settings don't persist across reboots, so the agent just re-applies the tweak at every login
 PLIST="$HOME/Library/LaunchAgents/com.user.capslockdelay.plist"
 mkdir -p "$HOME/Library/LaunchAgents"
 cat > "$PLIST" <<'EOF'
@@ -44,11 +43,9 @@ cat > "$PLIST" <<'EOF'
   </dict>
 </plist>
 EOF
-
 # Load (or reload) it immediately
 launchctl bootout gui/$(id -u) "$PLIST" 2>/dev/null || true
 launchctl bootstrap gui/$(id -u) "$PLIST"
-launchctl kickstart -k gui/$(id -u)/com.user.capslockdelay
 
 # disable Spotlight indexing
 sudo mdutil -a -i off
