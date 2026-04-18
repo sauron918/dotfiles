@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+echo "Setting up machine..."
+
+# Check if Homebrew is installed
+if ! command -v brew &> /dev/null; then
+    echo "Homebrew not found. Please install it first: https://brew.sh/"
+    exit 1
+fi
+
+echo "1. Installing packages..."
+
+brew install \
+  stow \ # for configs sync
+  espanso # for text replacements
+
+echo "Done!"
