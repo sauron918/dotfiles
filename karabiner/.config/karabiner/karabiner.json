@@ -407,7 +407,11 @@
                             },
                             {
                                 "from": { "key_code": "l", "modifiers": { "mandatory": ["option", "shift"] }},
-                                "to": [{ "key_code": "hyphen", "modifiers": ["option"] }],
+                                "to": [
+                                    { "key_code": "hyphen" },
+                                    { "key_code": "hyphen" },
+                                    { "key_code": "hyphen" }
+                                ],
                                 "type": "basic"
                             },
                             {
@@ -481,12 +485,7 @@
                             },
                             {
                                 "from": { "key_code": "slash", "modifiers": { "mandatory": ["option", "shift"] }},
-                                "to": [
-                                    { "key_code": "hyphen" },
-                                    { "key_code": "hyphen" },
-                                    { "key_code": "hyphen" },
-                                    { "key_code": "return_or_enter" }
-                                ],
+                                "to": [{ "key_code": "hyphen", "modifiers": ["option"] }],
                                 "type": "basic"
                             },
                             {
