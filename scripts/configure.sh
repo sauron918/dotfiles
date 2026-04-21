@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 
-echo "Configuring..."
+echo "Configuring macOS..."
 
-# macOS
-
-# disables the press-and-hold feature for keys (e.g. for é, ê) in favor of key repeat, default: true
+# disable the press-and-hold feature for keys (e.g. for é, ê) in favor of key repeat, default: true
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-# sets key repeat rate (lower is faster), default: 2 (2 ms delay between repeats)
+# set key repeat rate (lower is faster), default: 2 (2 ms delay between repeats)
 defaults write -g KeyRepeat -int 1
 
-# sets delay until key repeat (lower is faster), default: 15 (150 ms delay before repeat starts)
+# set delay until key repeat (lower is faster), default: 15 (150 ms delay before repeat starts)
 defaults write -g InitialKeyRepeat -int 13
 
 # by default, macOS intentionally adds a small delay (~150–300 ms) when pressing Caps Lock to prevent accidental activation
