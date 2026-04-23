@@ -391,6 +391,11 @@
                                 "type": "basic"
                             },
                             {
+                                "from": { "key_code": "h", "modifiers": { "mandatory": ["option","shift"] }},
+                                "to": [{ "key_code": "hyphen", "modifiers": ["option"] }],
+                                "type": "basic"
+                            },
+                            {
                                 "from": { "key_code": "j", "modifiers": { "mandatory": ["option"] }},
                                 "to": [{ "key_code": "9", "modifiers": ["shift"] }],
                                 "type": "basic"
@@ -481,11 +486,6 @@
                             {
                                 "from": { "key_code": "slash", "modifiers": { "mandatory": ["option"] }},
                                 "to": { "key_code": "8", "modifiers": ["shift"] },
-                                "type": "basic"
-                            },
-                            {
-                                "from": { "key_code": "slash", "modifiers": { "mandatory": ["option", "shift"] }},
-                                "to": [{ "key_code": "hyphen", "modifiers": ["option"] }],
                                 "type": "basic"
                             },
                             {
