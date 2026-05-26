@@ -106,6 +106,7 @@ function docker-exec-alias() { docker exec -it $1 ${2:-bash} }
 alias l='ls -lahG'
 alias e=subl
 alias kc=kubectl
+alias cc=claude --verbose
 alias con=bin/console
 
 # Git Aliases

@@ -14,6 +14,30 @@ matches:
   - trigger: ";cl"
     replace: "console.log($|$);"
 
+  - trigger: ";js"
+    replace: "```js\n$|$\n```"
+
+  - trigger: ";;."
+    replace: "…"
+
+  # Placeholders
+  ## Click
+  - trigger: ";;c"
+    replace: "{{% $|$ %}}"
+
+  ## Type
+  - trigger: ";;t"
+    replace: "{{_ $|$ _}}"
+
+  ## Select
+  - trigger: ";;s"
+    replace: "{{#\n- [ ] $|$\n#}}"
+
+  ## Do
+  - trigger: ";;d"
+    replace: "{{$\n$|$\n$}}"
+
+  # Common
   - trigger: ";date"
     replace: "{{mydate}}"
     vars:
@@ -30,6 +54,25 @@ matches:
         params:
           format: "%H:%M:%S"
 
+  ## Arrow keys
+  - trigger: ";;j"
+    replace: "←"
+
+  - trigger: ";;k"
+    replace: "↓"
+
+  - trigger: ";;l"
+    replace: "→"
+
+  - trigger: ";;i"
+    replace: "↑"
+
+  # - trigger: ";link"
+  #  replace: "[{{clipboard}}]($|$)"
+  #  vars:
+  #    - name: clipboard
+  #      type: clipboard
+
   # Print the output of a shell command
   - trigger: ";shell"
     replace: "{{output}}"
@@ -38,4 +81,3 @@ matches:
         type: shell
         params:
           cmd: "echo 'Hello from your shell'"
-
