@@ -124,3 +124,7 @@ alias stop='docker compose -f docker-compose.yml -f docker-compose.deps.yaml -f 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Creates a symbolic link in `$NVM_DIR/current` whenever we switch node versions, 
+# so the `~/.nvm/current/bin/node` always points to the active version
+export NVM_SYMLINK_CURRENT=true

@@ -19,7 +19,8 @@ echo "Installing packages..."
 # ghostty – terminal app 
 
 brew install \
-  stow
+  stow \
+  mole
   
 brew install --cask \
   ghostty \
