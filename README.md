@@ -1,8 +1,11 @@
-# dotfiles
+# DotFiles
 
-This repo contains configuration files to set up my machines.
+This repo contains configuration files and scripts to set up my machines.
 
 ## How to use
 
-* Use [GNU Stow](https://www.gnu.org/software/stow/) or [Chezmoi](https://www.chezmoi.io/) for provisioning.
-  * Example: `brew install stow && cd ~/dotfiles && stow --adopt */`
+* Use scripts in `scripts/` to set up a new machine:
+  * `bootstrap.sh` — installs required Homebrew packages/casks (`stow`, `ghostty`, etc). Run this first on a new machine, before `stow`.
+  * `configure.sh` — applies macOS system tweaks (key repeat rate, Caps Lock delay, disables Spotlight indexing etc).
+* Use [GNU Stow](https://www.gnu.org/software/stow/) for provisioning: `cd ~/dotfiles && stow --adopt */`
+
