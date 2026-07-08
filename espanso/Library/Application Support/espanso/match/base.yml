@@ -14,6 +14,9 @@ matches:
   - trigger: ";cl"
     replace: "console.log($|$);"
 
+  - trigger: ";cc"
+    replace: "Claude Code"
+
   - trigger: ";js"
     replace: "```js\n$|$\n```"
 
