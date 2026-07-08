@@ -35,6 +35,7 @@ Each package directory mirrors the home directory layout:
 - **`zsh/`** — `.zshrc` (oh-my-zsh with agnoster theme)
 - **`ghostty/`** — `.config/ghostty/config` (Ghostty terminal config)
 - **`karabiner/`** — `.config/karabiner/karabiner.json` (keyboard remapping, caps lock as modifier key)
+- **`claude/`** — `.claude/CLAUDE.md` (global Claude Code user memory/instructions, symlinked into `~/.claude/`)
 - **`scripts/`** — Utility scripts (not stowed; has its own `.stow-local-ignore` that ignores all files, plus excluded at repo level). Contains `bootstrap` for new machine setup.
 
 ## Conventions
