@@ -105,6 +105,7 @@ function docker-exec-alias() { docker exec -it $1 ${2:-bash} }
 ### Custom Aliases
 alias l='ls -lahG'
 alias e=subl
+alias z=zed -e
 alias kc=kubectl
 alias cc=claude --verbose
 alias con=bin/console
@@ -125,6 +126,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Creates a symbolic link in `$NVM_DIR/current` whenever we switch node versions, 
+# Creates a symbolic link in `$NVM_DIR/current` whenever we switch node versions,
 # so the `~/.nvm/current/bin/node` always points to the active version
 export NVM_SYMLINK_CURRENT=true
