@@ -14,14 +14,15 @@ fi
 echo "Installing packages..."
 
 # stop – for configs sync
-# espanso – for text replacements, it needs to be run before `stow` usage 
+# espanso – for text replacements, it needs to be run before `stow` usage
 #    to avoid errors 'unable to load config: unable to load config'
-# ghostty – terminal app 
+# ghostty – terminal app
 
 brew install \
   stow \
+  gh \
   mole
-  
+
 brew install --cask \
   ghostty \
   espanso
