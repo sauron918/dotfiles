@@ -115,6 +115,7 @@ alias gs='git status'
 alias gl='git log --graph --decorate --oneline --abbrev-commit --all'
 alias gp='git pull'
 alias gc='git checkout'
+alias gw='git worktree'
 alias de=docker-exec-alias
 
 # Docker Aliases

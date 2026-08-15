@@ -2,6 +2,8 @@
     path = ~/.config/git/.gitconfig.work
 [includeIf "gitdir:~/sp/"]
     path = ~/.config/git/.gitconfig.work
+[includeIf "gitdir:~/ns/"]
+    path = ~/.config/git/.gitconfig.work
 [includeIf "gitdir:~/dev/"]
     path = ~/.config/git/.gitconfig.personal
 [pull]
