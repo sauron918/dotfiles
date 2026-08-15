@@ -27,5 +27,8 @@ brew install --cask \
   ghostty \
   espanso
 
+brew install \
+  calude \
+  raine/claude-history/claude-history
 
 echo "Done!"

@@ -75,11 +75,6 @@ font-thicken = true
 # line-height
 adjust-cell-height = 30%
 
-
-### Key bindings
-keybind = cmd+alt+left=previous_tab
-keybind = cmd+alt+right=next_tab
-
 # Enable custom audio for the bell and bypass the default macOS system beep
 bell-features = audio,no-system
 bell-audio-path = ~/Downloads/sounds/mouse-click.mp3

@@ -9,7 +9,7 @@ This is a **dotfiles repository** managed with [GNU Stow](https://www.gnu.org/so
 ## How Stow Works Here
 
 - `.stowrc` sets `--target=$HOME`, so running `stow <package>` from the repo root symlinks that package's contents into the home directory.
-- `.stow-local-ignore` excludes `.git`, `.idea`, `scripts/`, `README`, and `LICENSE` files from being stowed.
+- `.stow-local-ignore` excludes `.git`, `.idea`, `_scripts/`, `README`, and `LICENSE` files from being stowed.
 
 ## Commands
 
@@ -36,7 +36,7 @@ Each package directory mirrors the home directory layout:
 - **`ghostty/`** — `.config/ghostty/config` (Ghostty terminal config)
 - **`karabiner/`** — `.config/karabiner/karabiner.json` (keyboard remapping, caps lock as modifier key)
 - **`claude/`** — `.claude/CLAUDE.md` (global Claude Code user memory/instructions, symlinked into `~/.claude/`)
-- **`scripts/`** — Utility scripts (not stowed; has its own `.stow-local-ignore` that ignores all files, plus excluded at repo level). Contains `bootstrap` for new machine setup.
+- **`_scripts/`** — Utility scripts (not stowed; has its own `.stow-local-ignore` that ignores all files, plus excluded at repo level). Contains `bootstrap` for new machine setup.
 
 ## Conventions
 

@@ -217,13 +217,13 @@
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "q", "modifiers": { "optional": ["any"] }},
-                                "to": { "key_code": "left_arrow", "modifiers": ["command", "option"] },
+                                "to": { "key_code": "open_bracket", "modifiers": ["command", "shift"] },
                                 "type": "basic"
                             },
                             {
                                 "conditions": [{ "name": "capslock_held", "type": "variable_if", "value": 1 }],
                                 "from": { "key_code": "e", "modifiers": { "optional": ["any"] }},
-                                "to": { "key_code": "right_arrow", "modifiers": ["command", "option"] },
+                                "to": { "key_code": "close_bracket", "modifiers": ["command", "shift"] },
                                 "type": "basic"
                             },
                             {
