@@ -33,4 +33,5 @@ keybind = super+digit_9=unbind
 
 keybind = super+shift+[=unbind
 keybind = super+shift+]=unbind
-
+keybind = super+[=unbind
+keybind = super+]=unbind
