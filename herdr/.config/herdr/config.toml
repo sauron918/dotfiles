@@ -19,6 +19,14 @@ focus_pane_up = "cmd+i"
 focus_pane_right = "cmd+l"
 focus_pane_down = "cmd+k"
 
+next_workspace = "ctrl+alt+down"
+previous_workspace = "ctrl+alt+up"
+next_agent = "cmd+]"
+previous_agent = "cmd+["
+
+new_workspace = "cmd+shift+n"
+new_worktree = "cmd+n"
+
 detach = "prefix+q"
 
 [ui.toast]
