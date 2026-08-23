@@ -29,6 +29,6 @@ brew install --cask \
 
 brew install \
   calude \
-  raine/claude-history/claude-history
+  # raine/claude-history/claude-history (arm64 only, since v0.1.59 https://github.com/raine/claude-history/issues/50)
 
 echo "Done!"

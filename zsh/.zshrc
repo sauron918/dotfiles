@@ -107,7 +107,7 @@ alias l='ls -lahG'
 alias e=subl
 alias z=zed -e
 alias kc=kubectl
-alias cc=claude --verbose
+alias cc=claude
 alias con=bin/console
 
 # Git Aliases
