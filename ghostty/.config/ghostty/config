@@ -67,11 +67,13 @@ shell-integration-features = no-cursor
 
 
 ### Typography
-font-family = Hack
-font-size = 18
-# to make font look bolder
+# font-family = Iosevka Term, ZedMono Nerd Font Mono, Pragmasevka, Maple Mono, M PLUS 1 Code, Hack, Inconsolata, PT Mono, D2Coding, GT Pressura Mono
+font-family = Iosevka Term
+font-size = 20
+font-feature = ss14
+# to make the font look a bit bolder
 font-thicken = true
-# font-thicken-strength = 100
+font-thicken-strength = 0
 # line-height
 adjust-cell-height = 30%
 

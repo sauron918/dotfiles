@@ -9,8 +9,8 @@ prefix = "cmd+;"
 
 switch_tab = "cmd+1..9"
 new_tab = "cmd+t"
-next_tab = "cmd+shift+]"
-previous_tab = "cmd+shift+["
+next_tab = "cmd+alt+right"
+previous_tab = "cmd+alt+left"
 
 split_vertical = "cmd+d"
 split_horizontal = "cmd+shift+d"

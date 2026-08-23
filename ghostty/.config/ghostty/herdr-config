@@ -38,5 +38,8 @@ keybind = super+[=unbind
 keybind = super+]=unbind
 keybind = super+shift+[=unbind
 keybind = super+shift+]=unbind
+
 keybind = super+alt+arrow_up=unbind
 keybind = super+alt+arrow_down=unbind
+keybind = super+alt+arrow_left=unbind
+keybind = super+alt+arrow_right=unbind
