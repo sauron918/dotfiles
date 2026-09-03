@@ -29,8 +29,9 @@ new_worktree = "cmd+n"
 
 detach = "prefix+q"
 
+[ui]
+window_title = "Herdr"
+show_agent_labels_on_pane_borders = true
+
 [ui.toast]
 delivery = "herdr"
-
-[ui]
-show_agent_labels_on_pane_borders = true
