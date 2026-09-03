@@ -519,7 +519,7 @@
                             },
                             {
                                 "from": { "key_code": "w", "modifiers": { "mandatory": ["option"] }},
-                                "to": { "key_code": "5", "modifiers": ["shift"] },
+                                "to": [{ "key_code": "hyphen", "modifiers": ["option"] }],
                                 "type": "basic"
                             },
                             {
@@ -538,6 +538,11 @@
                             },
                             {
                                 "from": { "key_code": "r", "modifiers": { "mandatory": ["option"] }},
+                                "to": { "key_code": "5", "modifiers": ["shift"] },
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "t", "modifiers": { "mandatory": ["option"] }},
                                 "to": { "key_code": "6", "modifiers": ["shift"] },
                                 "type": "basic"
                             }
