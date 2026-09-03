@@ -106,6 +106,7 @@ function docker-exec-alias() { docker exec -it $1 ${2:-bash} }
 alias l='ls -lahG'
 alias e=subl
 alias z=zed -e
+alias ide='phpstorm .'
 alias kc=kubectl
 alias cc=claude
 alias con=bin/console
